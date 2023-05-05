@@ -9,6 +9,8 @@ class Question():
         self.wrong1 = wrong1
         self.wrong2 = wrong2
         self.wrong3 = wrong3
+       
+app = QApplication([])
 
 questions_list = [] 
 questions_list.append(
@@ -17,8 +19,6 @@ questions_list.append(
         Question('Какого цвета нет на флаге России?', 'Зелёный', 'Красный', 'Белый', 'Синий'))
 questions_list.append(
         Question('Национальная хижина якутов', 'Ураса', 'Юрта', 'Иглу', 'Хата'))
-
-app = QApplication([])
 
 window = QWidget()
 window.setWindowTitle('Memo Card')
